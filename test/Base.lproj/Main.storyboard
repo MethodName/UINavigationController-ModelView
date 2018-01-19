@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TYl-d3-bZb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--主流程页面一-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="view" title="主流程页面一" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fID-TK-Cfk"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZMe-gF-sXE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tvv-zB-6u8">
+                                <rect key="frame" x="107.5" y="283" width="160" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="3OJ-0W-12m"/>
+                                    <constraint firstAttribute="height" constant="100" id="DNp-Xp-Ifr"/>
+                                </constraints>
+                                <state key="normal" title="showModel"/>
+                                <connections>
+                                    <action selector="btclick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Qg-9N-rja"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我想进入下一个页面，点击下面按钮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQ6-9M-aSl">
+                                <rect key="frame" x="48.5" y="238" width="278" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JQ6-9M-aSl" firstAttribute="centerX" secondItem="Tvv-zB-6u8" secondAttribute="centerX" id="6mF-OG-KXy"/>
+                            <constraint firstItem="Tvv-zB-6u8" firstAttribute="top" secondItem="JQ6-9M-aSl" secondAttribute="bottom" constant="24" id="hYA-Jd-41W"/>
+                            <constraint firstItem="Tvv-zB-6u8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x91-tZ-A3b"/>
+                            <constraint firstItem="Tvv-zB-6u8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zno-j9-y5C"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JY3-3R-cTX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="33.733133433283363"/>
+        </scene>
+        <!--主流程页面二-->
+        <scene sceneID="OGY-EI-PMM">
+            <objects>
+                <viewController storyboardIdentifier="view2" title="主流程页面二" id="v4Z-B7-KHN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="roJ-8h-xb4"/>
+                        <viewControllerLayoutGuide type="bottom" id="KhE-Jt-56W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uf7-VV-Qra">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是下一个页面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZS7-rn-6uY">
+                                <rect key="frame" x="126.5" y="323" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZS7-rn-6uY" firstAttribute="centerX" secondItem="uf7-VV-Qra" secondAttribute="centerX" id="KdM-og-AXw"/>
+                            <constraint firstItem="ZS7-rn-6uY" firstAttribute="centerY" secondItem="uf7-VV-Qra" secondAttribute="centerY" id="UQZ-XQ-9Ua"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pkz-6f-iAx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="728"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Cle-N6-yLh">
+            <objects>
+                <navigationController id="TYl-d3-bZb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AeE-0E-AXo">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SPB-jS-Bzi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MEV-eM-2US" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-793" y="34"/>
+        </scene>
+        <!--Page1 View Controller-->
+        <scene sceneID="3bi-vG-Hfi">
+            <objects>
+                <viewController storyboardIdentifier="page1" id="uEM-pI-xHo" customClass="Page1ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="201-6h-UUV"/>
+                        <viewControllerLayoutGuide type="bottom" id="TGg-qj-Im3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pMQ-K4-MXC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGt-FM-gHr">
+                                <rect key="frame" x="107.5" y="283" width="160" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="oC8-qa-ED2"/>
+                                    <constraint firstAttribute="height" constant="100" id="s44-Ca-3HA"/>
+                                </constraints>
+                                <state key="normal" title="下一步"/>
+                                <connections>
+                                    <segue destination="NQ1-pR-Cpr" kind="push" id="JOR-Ov-STx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="做完操作一，点击下面按钮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFL-qG-bc7">
+                                <rect key="frame" x="83.5" y="219" width="208" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dGt-FM-gHr" firstAttribute="centerY" secondItem="pMQ-K4-MXC" secondAttribute="centerY" id="1ap-Y0-bfI"/>
+                            <constraint firstItem="dGt-FM-gHr" firstAttribute="top" secondItem="wFL-qG-bc7" secondAttribute="bottom" constant="43" id="Rmx-RL-dYl"/>
+                            <constraint firstItem="dGt-FM-gHr" firstAttribute="centerX" secondItem="pMQ-K4-MXC" secondAttribute="centerX" id="Vyf-iY-RNm"/>
+                            <constraint firstItem="wFL-qG-bc7" firstAttribute="centerX" secondItem="dGt-FM-gHr" secondAttribute="centerX" id="zqk-ph-SaG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i3g-GJ-T9k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="930" y="20"/>
+        </scene>
+        <!--Page2 View Controller-->
+        <scene sceneID="PKj-6r-0iO">
+            <objects>
+                <viewController storyboardIdentifier="page2" id="NQ1-pR-Cpr" customClass="Page2ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jIH-Kq-R1h"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mri-sJ-LMu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="amd-cE-juN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Zr-Ep-TeY">
+                                <rect key="frame" x="107.5" y="283.5" width="160" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="7qA-RY-Go1"/>
+                                    <constraint firstAttribute="width" constant="160" id="9AL-SB-BNw"/>
+                                </constraints>
+                                <state key="normal" title="关闭"/>
+                                <connections>
+                                    <action selector="btClick:" destination="NQ1-pR-Cpr" eventType="touchUpInside" id="TTG-hO-MJC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="做完操作二，关闭modelView，点击下面按钮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXi-TN-d18">
+                                <rect key="frame" x="15" y="203" width="345" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5Zr-Ep-TeY" firstAttribute="centerX" secondItem="amd-cE-juN" secondAttribute="centerX" id="GBj-Ve-kn4"/>
+                            <constraint firstItem="5Zr-Ep-TeY" firstAttribute="centerY" secondItem="amd-cE-juN" secondAttribute="centerY" id="K8y-Uk-mM7"/>
+                            <constraint firstItem="5Zr-Ep-TeY" firstAttribute="top" secondItem="jXi-TN-d18" secondAttribute="bottom" constant="59.5" id="Tod-Hu-bwh"/>
+                            <constraint firstItem="jXi-TN-d18" firstAttribute="centerX" secondItem="5Zr-Ep-TeY" secondAttribute="centerX" id="nHa-HF-Byg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oWr-8Z-Uvo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uTh-Ai-12Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1985" y="21"/>
+        </scene>
+    </scenes>
+</document>
